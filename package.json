@@ -1,77 +1,77 @@
 {
-	"name": "profiler",
-	"description": "Built-in profiler for Nextcloud",
-	"version": "1.5.0",
-	"author": "Carl Schwan <carl@carlschwan.eu>",
-	"contributors": [
-		"Carl Schwan <carl@carlschwan.eu>"
-	],
-	"keywords": [
-		"nextcloud",
-		"files",
-		"performace"
-	],
-	"bugs": {
-		"url": "https://github.com/nextcloud/profiler/issues"
-	},
-	"repository": {
-		"url": "git+https://github.com/nextcloud/profiler.git",
-		"type": "git"
-	},
-	"homepage": "https://github.com/nextcloud/profiler",
-	"license": "AGPL-3.0-or-later",
-	"private": true,
-	"scripts": {
-		"build": "NODE_ENV=production webpack --progress --config webpack.js",
-		"dev": "NODE_ENV=development webpack --progress --config webpack.js",
-		"watch": "NODE_ENV=development webpack --progress --watch --config webpack.js",
-		"lint": "eslint --ext .js,.vue src",
-		"lint:fix": "eslint --ext .js,.vue src --fix",
-		"stylelint": "stylelint src",
-		"stylelint:fix": "stylelint src --fix",
-		"cypress": "TESTING=true cypress run",
-		"cypress:gui": "TESTING=true cypress open",
-		"wait-on": "wait-on -i 500 -t 300000"
-	},
-	"dependencies": {
-		"@nextcloud/auth": "^2.2.1",
-		"@nextcloud/axios": "^2.4.0",
-		"@nextcloud/dialogs": "^4.2.2",
-		"@nextcloud/event-bus": "^3.1.0",
-		"@nextcloud/initial-state": "^2.1.0",
-		"@nextcloud/l10n": "^2.2.0",
-		"@nextcloud/logger": "^2.7.0",
-		"@nextcloud/paths": "^2.1.0",
-		"@nextcloud/router": "^2.2.0",
-		"@nextcloud/vue": "^8.4.0",
-		"@skjnldsv/vue-plyr": "^7.4.0",
-		"camelcase": "^8.0.0",
-		"nextcloud-server": "^0.15.10",
-		"path-parse": "^1.0.7",
-		"vue": "^2.7.16",
-		"vue-material-design-icons": "^5.2.0",
-		"vue-router": "^3.6.5",
-		"vue-slider-component": "^3.2.24",
-		"vuex": "^3.6.2"
-	},
-	"browserslist": [
-		"extends @nextcloud/browserslist-config"
-	],
-	"engines": {
-		"node": "^20.0.0",
-		"npm": "^10.0.0"
-	},
-	"devDependencies": {
-		"@babel/plugin-proposal-class-properties": "^7.18.6",
-		"@cypress/browserify-preprocessor": "^3.0.2",
-		"@nextcloud/babel-config": "^1.0.0",
-		"@nextcloud/browserslist-config": "^3.0.0",
-		"@nextcloud/eslint-config": "^8.3.0",
-		"@nextcloud/stylelint-config": "^2.3.1",
-		"@nextcloud/webpack-vue-config": "^6.0.0",
-		"babel-loader-exclude-node-modules-except": "^1.2.1",
-		"jest": "^29.7.0",
-		"vue-template-compiler": "^2.7.16",
-		"wait-on": "^7.2.0"
-	}
+  "name": "profiler",
+  "description": "Built-in profiler for Nextcloud",
+  "version": "1.5.0",
+  "author": "Carl Schwan <carl@carlschwan.eu>",
+  "contributors": [
+    "Carl Schwan <carl@carlschwan.eu>"
+  ],
+  "keywords": [
+    "nextcloud",
+    "files",
+    "performace"
+  ],
+  "bugs": {
+    "url": "https://github.com/nextcloud/profiler/issues"
+  },
+  "repository": {
+    "url": "git+https://github.com/nextcloud/profiler.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/nextcloud/profiler",
+  "license": "AGPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress --config webpack.js",
+    "dev": "NODE_ENV=development webpack --progress --config webpack.js",
+    "watch": "NODE_ENV=development webpack --progress --watch --config webpack.js",
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix",
+    "stylelint": "stylelint src",
+    "stylelint:fix": "stylelint src --fix",
+    "cypress": "TESTING=true cypress run",
+    "cypress:gui": "TESTING=true cypress open",
+    "wait-on": "wait-on -i 500 -t 300000"
+  },
+  "dependencies": {
+    "@nextcloud/auth": "^2.2.1",
+    "@nextcloud/axios": "^2.4.0",
+    "@nextcloud/dialogs": "^4.2.2",
+    "@nextcloud/event-bus": "^3.1.0",
+    "@nextcloud/initial-state": "^2.1.0",
+    "@nextcloud/l10n": "^2.2.0",
+    "@nextcloud/logger": "^2.7.0",
+    "@nextcloud/paths": "^2.1.0",
+    "@nextcloud/router": "^2.2.0",
+    "@nextcloud/vue": "^8.4.0",
+    "@skjnldsv/vue-plyr": "^7.4.0",
+    "camelcase": "^8.0.0",
+    "nextcloud-server": "^0.15.10",
+    "path-parse": "^1.0.7",
+    "vue": "^2.7.16",
+    "vue-material-design-icons": "^5.2.0",
+    "vue-router": "^3.6.5",
+    "vue-slider-component": "^3.2.24",
+    "vuex": "^3.6.2"
+  },
+  "browserslist": [
+    "extends @nextcloud/browserslist-config"
+  ],
+  "engines": {
+    "node": "^20.0.0",
+    "npm": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@nextcloud/babel-config": "^1.0.0",
+    "@nextcloud/browserslist-config": "^3.0.0",
+    "@nextcloud/eslint-config": "^8.3.0",
+    "@nextcloud/stylelint-config": "^2.3.1",
+    "@nextcloud/webpack-vue-config": "^6.0.0",
+    "babel-loader-exclude-node-modules-except": "^1.2.1",
+    "jest": "^29.7.0",
+    "vue-template-compiler": "^2.7.16",
+    "wait-on": "^7.2.0"
+  }
 }
